@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SIP Requests, Responses &amp; SDP Headers Quiz (CCIE Level)</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  header {
+    background-color: #004578;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  .question {
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .question p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  ul li {
+    margin-bottom: 8px;
+  }
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #004578;
+  }
+  details {
+    margin-top: 10px;
+  }
+  details p {
+    margin-top: 10px;
+  }
+  a {
+    color: #0078D4;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+<header>SIP Requests, Responses &amp; SDP Headers Quiz (CCIE Collaboration)</header>
+<div class="container">
+<div class="question">
+<p><strong>Question 1:</strong> What SIP method is used to initiate a session?</p>
+<ul>
+<li>A) BYE</li>
+<li>B) INVITE</li>
+<li>C) CANCEL</li>
+<li>D) PRACK</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> B) INVITE<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc3261#section-13" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 2:</strong> Which SIP response code indicates successful session establishment?</p>
+<ul>
+<li>A) 100 Trying</li>
+<li>B) 180 Ringing</li>
+<li>C) 200 OK</li>
+<li>D) 486 Busy Here</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> C) 200 OK<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc3261#section-21.2.1" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 3:</strong> Which SIP message is used to reliably convey early media in forking scenarios?</p>
+<ul>
+<li>A) PRACK</li>
+<li>B) BYE</li>
+<li>C) UPDATE</li>
+<li>D) CANCEL</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> A) PRACK<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc3262" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 4:</strong> Which SIP request is used to modify the session without changing the call leg?</p>
+<ul>
+<li>A) REGISTER</li>
+<li>B) UPDATE</li>
+<li>C) REFER</li>
+<li>D) CANCEL</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> B) UPDATE<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc3311" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 5:</strong> What SIP message is used to terminate an established session?</p>
+<ul>
+<li>A) CANCEL</li>
+<li>B) ACK</li>
+<li>C) BYE</li>
+<li>D) OPTIONS</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> C) BYE<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc3261#section-15" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 6:</strong> Which SDP attribute indicates an endpoint will send media but not receive?</p>
+<ul>
+<li>A) a=sendrecv</li>
+<li>B) a=sendonly</li>
+<li>C) a=recvonly</li>
+<li>D) a=inactive</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> B) a=sendonly<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc3264#section-6" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 7:</strong> In SIP, what does the 'Via' header indicate?</p>
+<ul>
+<li>A) Encryption method</li>
+<li>B) identifies the location where the response is to be sent</li>
+<li>C) Codec preference</li>
+<li>D) Time-to-live</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> B) identifies the location where the response is to be sent<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc3261#section-8.1.1.7" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 8:</strong> What is the role of the 'Max-Forwards' header in SIP?</p>
+<ul>
+<li>A) Media direction</li>
+<li>B) Hop limit</li>
+<li>C) Call-ID definition</li>
+<li>D) SDP encoding</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> B) Hop limit<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc3261#section-8.1.1.6" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 9:</strong> Which SIP provisional response indicates early media might follow?</p>
+<ul>
+<li>A) 100 Trying</li>
+<li>B) 180 Ringing</li>
+<li>C) 183 Session Progress</li>
+<li>D) 200 OK</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> C) 183 Session Progress<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc3261#section-21.1.5" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 10:</strong> What does SDP 'b=AS' represent?</p>
+<ul>
+<li>A) Session bandwidth allocation</li>
+<li>B) Audio silence suppression</li>
+<li>C) Packet size</li>
+<li>D) Payload type</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> A) Session bandwidth allocation<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc4566#section-5.8" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 11:</strong> Which header identifies the session globally in SIP?</p>
+<ul>
+<li>A) To</li>
+<li>B) From</li>
+<li>C) Call-ID</li>
+<li>D) Contact</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> C) Call-ID<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc3261#section-8.1.1.4" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 12:</strong> In SDP, which attribute means no media will be sent or received?</p>
+<ul>
+<li>A) a=sendrecv</li>
+<li>B) a=inactive</li>
+<li>C) a=recvonly</li>
+<li>D) a=sendonly</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> B) a=inactive<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc3264#section-6" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 13:</strong> What does SIP 'Supported' header declare?</p>
+<ul>
+<li>A) Supported methods</li>
+<li>B) Supported extensions</li>
+<li>C) Supported codecs</li>
+<li>D) Supported media types</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> B) Supported extensions<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc3261#section-20.37" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 14:</strong> Which SIP request can refresh session timers without changing media?</p>
+<ul>
+<li>A) INVITE</li>
+<li>B) UPDATE</li>
+<li>C) BYE</li>
+<li>D) REGISTER</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> B) UPDATE<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc4028" target="_blank">Learn more</a></p>
+</details>
+</div>
+<div class="question">
+<p><strong>Question 15:</strong> What SIP response code indicates codec or SDP negotiation failure?</p>
+<ul>
+<li>A) 486 Busy Here</li>
+<li>B) 404 Not Found</li>
+<li>C) 488 Not Acceptable Here</li>
+<li>D) 500 Server Internal Error</li>
+</ul>
+<details><summary>Reveal Answer</summary>
+<p><strong>Answer:</strong> C) 488 Not Acceptable Here<br/>
+<a href="https://datatracker.ietf.org/doc/html/rfc3261#section-21.4.15" target="_blank">Learn more</a></p>
+</details>
+</div>
+</div></body></html>
